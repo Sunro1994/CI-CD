@@ -29,6 +29,7 @@ jobs:
       with:
         arguments: clean bootJar
         gradle-version: '8.7'
+        working-directory: CI-CD # 프로젝트의 루트 디렉토리로 설정
 
     # 3. Docker 이미지 빌드
     - name: docker image build
